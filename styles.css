@@ -1889,6 +1889,21 @@ p {
   border-radius: calc(2.5rem - 0.65rem);
   overflow: hidden;
   aspect-ratio: 4 / 5;
+  position: relative;
+}
+
+.specialist-image-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.15) 35%,
+    transparent 60%
+  );
+  border-radius: inherit;
+  pointer-events: none;
 }
 
 .specialist-image-inner img {
