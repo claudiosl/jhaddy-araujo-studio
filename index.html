@@ -70,6 +70,21 @@
         background: none !important;
       }
 
+      .hero-mobile-gradient {
+        display: block !important;
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.82) 0%,
+          rgba(0, 0, 0, 0.45) 35%,
+          rgba(0, 0, 0, 0.10) 60%,
+          transparent 80%
+        ) !important;
+        z-index: 2 !important;
+        pointer-events: none !important;
+      }
+
       .hero-top-social,
       .hero-desktop-specialist-side {
         display: none !important;
@@ -325,6 +340,8 @@
          HERO SECTION (EDITORIAL SPLIT & HIGH CONVERSION)
          ====================================================================== -->
     <section class="hero-section" id="hero">
+      <!-- Gradiente escuro mobile: sobe da base da foto hero -->
+      <div class="hero-mobile-gradient" style="display:none;"></div>
       <div class="hero-top-social reveal-on-scroll">
         <a href="https://www.instagram.com/jhaddy_araujostudioo/" class="social-icon-btn" data-social="instagram"
           aria-label="Instagram Jhaddy Araújo Studio" target="_blank" rel="noopener noreferrer">
