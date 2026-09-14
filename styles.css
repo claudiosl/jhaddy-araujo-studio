@@ -941,8 +941,8 @@ p {
     padding-top: calc(45px + env(safe-area-inset-top, 0px));
     padding-bottom: calc(105px + env(safe-area-inset-bottom, 0px));
     position: relative;
-    background-color: #140E0C;
-    background-image: url('assets/images/jhaddy-hero-1080x1920.jpg?v=3.0');
+    background-color: #000000;
+    background-image: url('assets/images/JHADDY-MOBILE.png?v=1.0');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
