@@ -1056,30 +1056,76 @@ p {
   }
 }
 
-@media (max-width: 480px) and (max-height: 720px) {
+/* MODO PAISAGEM / TELAS HORIZONTAIS OU CURTAS (Celular deitado, altura <= 580px) */
+@media (max-width: 991px) and (orientation: landscape), (max-height: 580px) and (orientation: landscape) {
   .hero-section {
-    padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+    min-height: 100vh !important;
+    min-height: 100svh !important;
+    min-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding-top: calc(52px + env(safe-area-inset-top, 0px)) !important;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+    background-color: #140E0C !important;
+    background-image: 
+      linear-gradient(to right, rgba(20, 14, 12, 0.97) 0%, rgba(20, 14, 12, 0.85) 42%, rgba(20, 14, 12, 0.2) 68%, transparent 100%),
+      url('assets/images/jhaddy-clean-hero.jpg?v=2.0') !important;
+    background-position: right center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
   }
-  .hero-copy h1 {
-    font-size: clamp(22px, 6vw, 26px);
-    margin-bottom: 14px;
+
+  .hero-section > .container {
+    margin: auto 0 !important;
+    padding: 0 max(24px, env(safe-area-inset-left, 24px)) !important;
   }
+
+  .hero-grid {
+    justify-content: center !important;
+  }
+
+  .hero-copy {
+    max-width: 52% !important;
+  }
+
   .hero-eyebrow {
-    font-size: 11px;
-    margin-bottom: 6px;
+    font-size: 10.5px !important;
+    margin-bottom: 4px !important;
   }
+
+  .hero-copy h1 {
+    font-size: clamp(18px, 3.8vw, 24px) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 12px !important;
+  }
+
   .hero-cta-group .btn-primary {
-    padding: 12px 16px 12px 22px;
-    font-size: 14px;
+    max-width: 320px !important;
+    padding: 10px 16px 10px 20px !important;
+    font-size: 13.5px !important;
   }
 }
 
-@media (max-width: 480px) {
-  .hero-copy h1 {
-    font-size: clamp(24px, 6.6vw, 30px);
+/* Celulares menores em modo retrato (iPhone SE, telas com altura <= 720px) */
+@media (max-width: 480px) and (orientation: portrait) and (max-height: 720px) {
+  .hero-section {
+    padding-bottom: calc(75px + env(safe-area-inset-bottom, 0px)) !important;
   }
-  .hero-description {
-    display: none !important;
+
+  .hero-copy h1 {
+    font-size: clamp(21px, 5.6vw, 25px) !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-eyebrow {
+    font-size: 10.5px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .hero-cta-group .btn-primary {
+    padding: 11px 16px 11px 20px !important;
+    font-size: 13.5px !important;
   }
 }
 
