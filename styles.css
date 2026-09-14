@@ -895,10 +895,23 @@ p {
    Editorial Luxury Showcase: moldura da especialista + tipografia com alto contraste
    ========================================================================== */
 @media (max-width: 991px) {
-  /* Navbar island ajustada para mobile */
+  /* Navbar island ajustada para mobile: oculta no topo para não cobrir a cabeça da especialista, surge ao rolar */
   .nav-header {
     top: 0.5rem;
     padding: 0 0.75rem;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  }
+
+  .nav-header:not(.is-scrolled) {
+    transform: translateY(-125%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-header.is-scrolled {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .nav-island-container {

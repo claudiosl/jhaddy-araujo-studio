@@ -152,6 +152,7 @@ function setupNavigation() {
   const hamburger = document.getElementById('navHamburger');
   const overlay = document.getElementById('mobileNavOverlay');
   const navLinks = document.querySelectorAll('.mobile-nav-link');
+  const navHeader = document.querySelector('.nav-header');
 
   if (!hamburger || !overlay) return;
 
@@ -170,6 +171,19 @@ function setupNavigation() {
       }
     });
   });
+
+  // Controle de exibição do header no mobile: só surge ao rolar para não cobrir a cabeça da especialista
+  if (navHeader) {
+    const handleScroll = () => {
+      if (window.scrollY > 60) {
+        navHeader.classList.add('is-scrolled');
+      } else {
+        navHeader.classList.remove('is-scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+  }
 }
 
 /**
