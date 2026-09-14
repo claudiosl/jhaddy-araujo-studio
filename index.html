@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Jhaddy Araújo Studio | Epilação Terapêutica, Clareamento Íntimo, Limpeza de Pele & Dermaplaning</title>
+
+  <!-- Meta SEO Essencial -->
+  <meta name="description"
+    content="Jhaddy Araújo Studio no Condomínio Vila dos Sapotizeiros, Cabula em Salvador/BA. Especialista em Epilação Terapêutica, Clareamento Íntimo, Limpeza de Pele e Dermaplaning. Agende seu horário.">
+  <meta name="keywords"
+    content="Jhaddy Araújo Studio, epilação terapêutica salvador, clareamento íntimo cabula, limpeza de pele cabula, dermaplaning salvador, estética cabula">
+  <link rel="canonical" href="https://jhaddyaraujostudio.com.br/">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jhaddy Araújo Studio | Estética & Bem-Estar • Salvador/BA">
+  <meta property="og:description"
+    content="Realce sua beleza natural com protocolos exclusivos, atendimento acolhedor e técnicas modernas no Cabula, Salvador/BA.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:url" content="https://jhaddyaraujostudio.com.br/">
+  <meta property="og:site_name" content="Jhaddy Araújo Studio">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jhaddy Araújo Studio | Estética & Bem-Estar">
+  <meta name="twitter:description"
+    content="Realce sua beleza natural no Cabula, Salvador/BA. Agendamento exclusivo pelo WhatsApp.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png?v=2.0">
+
+  <!-- Google Fonts - Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Estilos do Projeto com Cache Buster -->
+  <link rel="stylesheet" href="styles.css?v=10.0">
+  <style>
+    /* HERO MOBILE CINEMATOGRÁFICA MULTI-DEVICE (iOS + Android + Tablets) */
+    @media (max-width: 991px) {
+      .hero-section {
+        min-height: 100vh !important;
+        min-height: 100svh !important;
+        min-height: 100dvh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        padding-top: calc(45px + env(safe-area-inset-top, 0px)) !important;
+        padding-bottom: calc(105px + env(safe-area-inset-bottom, 0px)) !important;
+        position: relative !important;
+        background-color: #140E0C !important;
+        background-image: url('assets/images/jhaddy-hero-1080x1920.jpg?v=3.0') !important;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important; /* Previne bug de zoom do iOS Safari */
+        overflow: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      .hero-section::before,
+      .hero-section::after {
+        content: none !important;
+        display: none !important;
+        background: none !important;
+      }
+
+      .hero-top-social,
+      .hero-desktop-specialist-side {
+        display: none !important;
+      }
+
+      /* Oculta moldura separada pois a imagem já ocupa o fundo inteiro */
+      .hero-mobile-media {
+        display: none !important;
+      }
+
+      .hero-section>.container {
+        width: 100% !important;
+        padding: 0 max(20px, env(safe-area-inset-left, 20px)) !important;
+        padding-right: max(20px, env(safe-area-inset-right, 20px)) !important;
+        margin-top: auto !important;
+        z-index: 5 !important;
+      }
+
+      .hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+
+      /* Bloco de Conteúdo: Ancorado do meio para baixo */
+      .hero-copy {
+        position: relative !important;
+        z-index: 5 !important;
+        text-align: left !important;
+        width: 100% !important;
+        max-width: 540px !important; /* Mantém leitura proporcional em iPads/Tablets */
+        padding: 0 !important;
+      }
+
+      .hero-brand-header {
+        display: none !important;
+      }
+
+      .hero-eyebrow {
+        display: inline-block !important;
+        font-size: 12px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.16em !important;
+        text-transform: uppercase !important;
+        color: #E2C493 !important;
+        margin-bottom: 8px !important;
+        text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6) !important;
+      }
+
+      .hero-copy h1 {
+        font-family: var(--font-serif) !important;
+        font-size: clamp(26px, 6.2vw, 34px) !important;
+        line-height: 1.16 !important;
+        color: #FAF7F2 !important;
+        margin-bottom: 18px !important;
+        text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65) !important;
+      }
+
+      .hero-copy h1 em {
+        color: #E2C493 !important;
+        font-style: italic !important;
+        font-weight: 400 !important;
+      }
+
+      /* Oculta descrição no mobile e tablet para manter foco limpo e direto */
+      .hero-description {
+        display: none !important;
+      }
+
+      .hero-cta-group {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+      }
+
+      .hero-cta-group .btn-primary {
+        width: 100% !important;
+        max-width: 100% !important;
+        justify-content: space-between !important;
+        padding: 14px 18px 14px 26px !important;
+        font-size: 15px !important;
+        background: linear-gradient(135deg, #C5A059 0%, #9C7844 100%) !important;
+        color: #1A120F !important;
+        font-weight: 700 !important;
+        border: 1px solid rgba(255, 255, 255, 0.35) !important;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(197, 160, 89, 0.35) !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+
+      .hero-cta-group .btn-trailing-icon {
+        background: #1A120F !important;
+        color: #FAF7F2 !important;
+      }
+    }
+
+    /* Celulares menores / telas curtas (ex: iPhone SE, Galaxy A, altura <= 720px) */
+    @media (max-width: 480px) and (max-height: 720px) {
+      .hero-section {
+        padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px)) !important;
+      }
+
+      .hero-copy h1 {
+        font-size: clamp(22px, 6vw, 26px) !important;
+        margin-bottom: 14px !important;
+      }
+
+      .hero-eyebrow {
+        font-size: 11px !important;
+        margin-bottom: 6px !important;
+      }
+
+      .hero-cta-group .btn-primary {
+        padding: 12px 16px 12px 22px !important;
+        font-size: 14px !important;
+      }
+    }
+
+    /* Celulares padrão a grandes (iPhone 12 a 16 Pro Max, Galaxy S21-S24) */
+    @media (max-width: 480px) {
+      .hero-copy h1 {
+        font-size: clamp(24px, 6.6vw, 30px) !important;
+      }
+
+      .hero-description {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <!-- Schema Markup JSON-LD (BeautySalon & LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["BeautySalon", "LocalBusiness"],
+    "name": "Jhaddy Araújo Studio",
+    "image": "https://jhaddyaraujostudio.com.br/assets/images/specialist.jpg",
+    "description": "Jhaddy Araújo Studio - Estética Facial, Corporal e Realce do Olhar no Cabula, Salvador/BA. Condomínio Vila dos Sapotizeiros, R. Silveira Martins, 551.",
+    "priceRange": "$$",
+    "hasMap": "https://maps.google.com/?cid=14108806332529309859",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Silveira Martins, 551 - Condomínio Vila dos Sapotizeiros",
+      "addressLocality": "Salvador",
+      "addressRegion": "BA",
+      "postalCode": "41150-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -12.959744,
+      "longitude": -38.456525
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       FLUID ISLAND NAVIGATION
+       ======================================================================== -->
+  <header class="nav-header">
+    <div class="nav-island-container">
+      <a href="#hero" class="nav-brand" aria-label="Jhaddy Araújo Studio - Início">
+        <img src="assets/images/logo-icon.png?v=2.0" alt="Logo Jhaddy Araújo" width="38" height="38" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">JHADDY ARAÚJO</span>
+          <span class="brand-tag">Studio de Beleza</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu-links">
+          <li><a href="#especialista" class="nav-link">Sobre</a></li>
+          <li><a href="#tratamentos" class="nav-link">Serviços</a></li>
+          <li><a href="#produtos" class="nav-link">Produtos</a></li>
+          <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+          <li><a href="#contato" class="nav-link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-hamburger" id="navHamburger" aria-label="Abrir Menu Mobile">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Screen-Filling Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <img src="assets/images/logo-icon.png?v=2.0" alt="Jhaddy Araújo Studio de Beleza" width="76" height="76"
+        style="border-radius: 50%; filter: drop-shadow(0 0 20px rgba(197, 160, 89, 0.65));">
+      <div
+        style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: #FAF7F2; margin-top: 0.5rem; letter-spacing: 0.05em;">
+        JHADDY ARAÚJO</div>
+      <div style="font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold);">
+        Studio de Beleza</div>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#especialista" class="mobile-nav-link">Sobre o Estúdio</a></li>
+      <li><a href="#tratamentos" class="mobile-nav-link">Procedimentos</a></li>
+      <li><a href="#produtos" class="mobile-nav-link">Produtos</a></li>
+      <li><a href="#depoimentos" class="mobile-nav-link">Avaliações de Clientes</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Dúvidas Frequentes</a></li>
+      <li><a href="#contato" class="mobile-nav-link">Localização &amp; Contato</a></li>
+    </ul>
+
+    <div class="social-links-row" style="margin-top: 2rem;">
+      <a href="https://www.instagram.com/jhaddy_araujostudioo/" class="social-icon-btn" data-social="instagram"
+        aria-label="Instagram do estúdio" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://wa.me/5571987870244" class="social-icon-btn" data-action="open-whatsapp"
+        aria-label="WhatsApp do estúdio" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION (EDITORIAL SPLIT & HIGH CONVERSION)
+         ====================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-top-social reveal-on-scroll">
+        <a href="https://www.instagram.com/jhaddy_araujostudioo/" class="social-icon-btn" data-social="instagram"
+          aria-label="Instagram Jhaddy Araújo Studio" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Imagem Visível da Especialista no Topo (Mobile: Sangrada ponta a ponta) -->
+          <div class="hero-mobile-media reveal-on-scroll">
+            <div class="hero-mobile-image-frame">
+              <img src="assets/images/jhaddy-hero-1080x1920.jpg" alt="Jhaddy Araújo - Estética e Epilação em Salvador"
+                width="1080" height="1920" class="hero-mobile-photo" loading="eager" fetchpriority="high">
+              <div class="hero-mobile-overlay-fade"></div>
+              <div class="hero-mobile-badge">
+                <span class="hero-badge-name">Jhaddy Araújo</span>
+                <span class="hero-badge-crbm">Especialista em Epilação &amp; Estética</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-copy reveal-on-scroll">
+            <!-- Logo Oficial da Marca (Desktop) -->
+            <div class="hero-brand-header">
+              <img src="assets/images/logo-icon.png?v=2.0" alt="Jhaddy Araújo - Studio de Beleza"
+                class="hero-brand-logo-full" style="max-height: 95px; width: auto; border-radius: 50%; filter: drop-shadow(0 6px 20px rgba(197, 160, 89, 0.4));">
+            </div>
+
+            <h1>Tratamentos para a pele, da epilação terapêutica ao cuidado íntimo.</h1>
+
+            <div class="hero-cta-group">
+              <button class="btn-primary" data-action="open-modal-booking">
+                <span>Agendar Avaliação</span>
+                <span class="btn-trailing-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ESPECIALISTA / AUTORIDADE TÉCNICA (SEGUNDA SEÇÃO)
+         ====================================================================== -->
+    <section class="section-spacing" id="especialista">
+      <div class="container">
+        <div class="specialist-grid">
+
+          <div class="specialist-media reveal-on-scroll">
+            <div class="specialist-image-outer">
+              <div class="specialist-image-inner">
+                <img src="assets/images/jhaddy-araujo.png"
+                  alt="Jhaddy Araújo - Esteticista Especialista em Estética Facial, Corporal e Olhar" width="900"
+                  height="1100" loading="lazy"
+                  style="width: 100%; height: 100%; object-fit: cover; object-position: top center;">
+              </div>
+            </div>
+          </div>
+
+          <div class="specialist-content reveal-on-scroll">
+
+            <span class="eyebrow-badge" style="margin-bottom: 0.75rem;">Sobre a Especialista</span>
+            <h2 class="specialist-name" data-config="specialistName">Jhaddy Araújo</h2>
+            <div class="specialist-title" data-config="specialistTitle">Esteticista e Especialista em Cuidados da Pele</div>
+
+            <p class="specialist-bio" data-config="specialistBio">
+              À frente do estúdio no Cabula, Jhaddy Araújo é esteticista especializada em cuidados personalizados para a saúde e recuperação da pele. Seus atendimentos são realizados com hora marcada em ambiente privativo, unindo técnicas de biossegurança, materiais descartáveis e cosméticos desenvolvidos para peles sensíveis.
+            </p>
+
+            <ul class="credentials-list">
+              <li class="credential-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Epilação Terapêutica:</strong> Cosméticos pré e pós-cera que acalmam a vermelhidão e previnem pelos encravados e foliculite.</span>
+              </li>
+              <li class="credential-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Clareamento Íntimo:</strong> Tratamento gradual e seguro para manchas causadas por atrito ou lâmina em axilas e virilha.</span>
+              </li>
+              <li class="credential-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Procedimentos Faciais:</strong> Limpeza de pele profunda com vapor de ozônio e dermaplaning com lâmina estéril.</span>
+              </li>
+            </ul>
+
+            <button class="btn-primary" data-action="open-modal-booking">
+              <span>Agendar Minha Avaliação</span>
+              <span class="btn-trailing-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         SERVIÇOS E PROTOCOLOS (TERCEIRA SEÇÃO)
+         ====================================================================== -->
+    <section class="section-spacing" id="tratamentos">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Serviços e Procedimentos</h2>
+          <p>Tratamentos focados na saúde da pele, alívio de irritações causadas por depilação e cuidados faciais no Cabula.</p>
+        </div>
+
+        <!-- Abas de Navegação -->
+        <div class="treatments-tabs reveal-on-scroll">
+          <button class="tab-btn is-active" data-category="all">Todos os Serviços</button>
+          <button class="tab-btn" data-category="epilacao">Epilação & Clareamento</button>
+          <button class="tab-btn" data-category="facial">Estética Facial</button>
+        </div>
+
+        <!-- Grid de Cards de Tratamentos (Apenas os 4 Principais Serviços Oficiais) -->
+        <div class="treatments-grid">
+
+          <!-- Card 1: Epilação Terapêutica -->
+          <div class="bezel-card-outer treatment-card reveal-on-scroll" data-category="epilacao">
+            <div class="bezel-card-inner">
+              <div class="treatment-card-media">
+                <img src="assets/images/epilacao-terapeutica.jpg"
+                  alt="Epilação Terapêutica com cuidado e conforto para a pele no Cabula" width="600" height="375"
+                  loading="lazy">
+              </div>
+              <span class="treatment-tag">Epilação</span>
+              <h3 class="treatment-title">Epilação Terapêutica</h3>
+              <div
+                style="color: var(--color-gold); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                Controle de Foliculite e Pelos Encravados</div>
+              <p class="treatment-description">
+                Aplicação de cera combinada com cosméticos pré e pós que acalmam a vermelhidão, diminuem a ardência e previnem o surgimento de foliculite.
+              </p>
+              <div class="treatment-specs">
+                <span><strong>Indicação:</strong> Peles com tendência a pelos encravados, irritação por lâmina ou sensibilidade</span>
+                <span><strong>Benefício:</strong> Pele suave por mais tempo, sem irritação contínua</span>
+                <span><strong>Atendimento:</strong> Ambiente privativo, produtos calmantes e material descartável</span>
+              </div>
+              <button class="btn-primary" data-action="open-modal-booking">
+                <span>Agendar Avaliação</span>
+                <span class="btn-trailing-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Clareamento Íntimo -->
+          <div class="bezel-card-outer treatment-card reveal-on-scroll" data-category="epilacao">
+            <div class="bezel-card-inner">
+              <div class="treatment-card-media">
+                <img src="assets/images/clareamento-intimo.jpg"
+                  alt="Clareamento Íntimo para axilas e virilha com segurança dermatológica" width="600" height="375"
+                  loading="lazy">
+              </div>
+              <span class="treatment-tag">Corporal e Íntimo</span>
+              <h3 class="treatment-title">Clareamento Íntimo</h3>
+              <div
+                style="color: var(--color-gold); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                Uniformização de Axilas e Virilha</div>
+              <p class="treatment-description">
+                Tratamento com fórmulas despigmentantes suaves para amenizar manchas causadas pelo atrito de roupas ou pelo uso contínuo de lâminas.
+              </p>
+              <div class="treatment-specs">
+                <span><strong>Indicação:</strong> Escurecimento em axilas, virilha e parte interna das coxas</span>
+                <span><strong>Benefício:</strong> Clareamento gradual sem irritação ou descamação agressiva</span>
+                <span><strong>Método:</strong> Ativos seguros para regiões de pele fina</span>
+              </div>
+              <button class="btn-primary" data-action="open-modal-booking">
+                <span>Agendar Avaliação</span>
+                <span class="btn-trailing-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Limpeza de Pele -->
+          <div class="bezel-card-outer treatment-card reveal-on-scroll" data-category="facial">
+            <div class="bezel-card-inner">
+              <div class="treatment-card-media">
+                <img src="assets/images/limpeza-de-pele.jpg"
+                  alt="Limpeza de pele profunda profissional com vapor de ozônio e máscara" width="600" height="375"
+                  loading="lazy">
+              </div>
+              <span class="treatment-tag">Facial</span>
+              <h3 class="treatment-title">Limpeza de Pele</h3>
+              <div
+                style="color: var(--color-gold); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                Higienização e Extração de Cravos</div>
+              <p class="treatment-description">
+                Higienização com vapor de ozônio para amolecer cravos e impurezas, extração manual cuidadosa, aplicação de alta frequência e máscara calmante.
+              </p>
+              <div class="treatment-specs">
+                <span><strong>Indicação:</strong> Cravos visíveis, excesso de oleosidade e poros obstruídos</span>
+                <span><strong>Benefício:</strong> Rosto limpo, textura uniforme e recuperação rápida</span>
+                <span><strong>Duração:</strong> Aproximadamente 60 a 75 minutos</span>
+              </div>
+              <button class="btn-primary" data-action="open-modal-booking">
+                <span>Agendar Avaliação</span>
+                <span class="btn-trailing-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Dermaplaning -->
+          <div class="bezel-card-outer treatment-card reveal-on-scroll" data-category="facial">
+            <div class="bezel-card-inner">
+              <div class="treatment-card-media">
+                <img src="assets/images/dermaplaning.jpg"
+                  alt="Dermaplaning facial para remoção de lanugem e maciez imediata" width="600" height="375"
+                  loading="lazy">
+              </div>
+              <span class="treatment-tag">Facial</span>
+              <h3 class="treatment-title">Dermaplaning</h3>
+              <div
+                style="color: var(--color-gold); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+                Esfoliação com Lâmina Cirúrgica</div>
+              <p class="treatment-description">
+                Esfoliação mecânica superficial para remoção de células mortas e da lanugem facial, deixando a pele com toque liso e pronta para receber cosméticos ou maquiagem.
+              </p>
+              <div class="treatment-specs">
+                <span><strong>Indicação:</strong> Textura irregular, penugem facial em excesso ou preparo para eventos</span>
+                <span><strong>Benefício:</strong> Maciez imediata e melhor espalhabilidade de produtos de cuidados diários</span>
+                <span><strong>Procedimento:</strong> Totalmente indolor, sem necessidade de repouso</span>
+              </div>
+              <button class="btn-primary" data-action="open-modal-booking">
+                <span>Agendar Avaliação</span>
+                <span class="btn-trailing-icon">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SLIDER INTERATIVO ANTES & DEPOIS
+         ====================================================================== -->
+    <section class="section-spacing comparison-section" id="resultados">
+      <div class="container">
+        <div class="section-header comparison-header reveal-on-scroll">
+          <h2>Resultados: Epilação Terapêutica</h2>
+          <p>Arraste o divisor interativo para comparar a pele antes e após o protocolo especializado para alívio da foliculite e pelos encravados.</p>
+        </div>
+
+        <div class="comparison-card-wrapper reveal-on-scroll">
+          <div class="bezel-dark-outer">
+            <div class="bezel-dark-inner" style="padding: 1rem;">
+
+              <div class="comparison-slider-container" id="comparisonContainer">
+                <!-- Imagem DEPOIS (Base fixa) -->
+                <img src="assets/images/epilacao-after.jpg"
+                  id="comparisonImgAfter"
+                  alt="Pele lisa, acetinada e livre de foliculite após Epilação Terapêutica"
+                  class="comparison-image image-after">
+
+                <!-- Imagem ANTES (Revelada por recorte) -->
+                <div class="comparison-overlay-clip" id="comparisonOverlayClip">
+                  <img src="assets/images/epilacao-before.jpg"
+                    id="comparisonImgBefore"
+                    alt="Pele com pelos encravados, foliculite e irritação antes da Epilação Terapêutica"
+                    class="comparison-image image-before">
+                </div>
+
+                <!-- Divisor e Alça de Arrasto -->
+                <div class="comparison-divider-line" id="comparisonDividerLine"></div>
+                <div class="comparison-handle" id="comparisonHandle" aria-label="Alça do comparador antes e depois">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                    <polyline points="9 18 3 12 9 6"></polyline>
+                  </svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                    <polyline points="15 18 21 12 15 6"></polyline>
+                  </svg>
+                </div>
+
+                <!-- Selos de Antes e Depois -->
+                <span class="comparison-badge badge-before">Antes</span>
+                <span class="comparison-badge badge-after">Depois</span>
+              </div>
+
+              <p class="comparison-note" id="comparisonNote">
+                *Exemplo de alívio da foliculite e de pelos encravados após protocolo de epilação. O tempo de resposta varia para cada tipo de pele.
+              </p>
+
+              <div style="display: flex; justify-content: center; margin-top: 1.5rem;">
+                <button class="btn-primary" data-action="open-modal-booking">
+                  <span>Quero esse Resultado para Minha Pele</span>
+                  <span class="btn-trailing-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PRODUTOS / LOJA (JHADDY ARAÚJO STUDIO)
+         ====================================================================== -->
+    <section class="section-spacing produtos-section" id="produtos">
+      <div class="container">
+
+        <div class="section-header reveal-on-scroll">
+          <h2>Produtos do Studio</h2>
+          <p>Cosméticos usados nos atendimentos e indicados para você manter o cuidado com a pele em casa.</p>
+        </div>
+
+        <div class="produtos-grid reveal-on-scroll">
+
+          <!-- Produto Destaque -->
+          <div class="produto-destaque-card">
+            <div class="produto-destaque-img-wrap">
+              <img src="assets/images/produto-blend-clareamento.png" alt="Blend para Clareamento Jhaddy Araújo Studio"
+                loading="lazy">
+            </div>
+            <div class="produto-destaque-info">
+              <span class="produto-tag">Exclusivo do Studio</span>
+              <h3>Blend para Clareamento</h3>
+              <p>Fórmula desenvolvida para clareamento gradual de axilas, virilha e áreas escurecidas por atrito. Uso diário com textura leve.</p>
+              <a href="https://wa.me/557198787024?text=Olá%2C+Jhaddy%21+Gostaria+de+comprar+o+Blend+para+Clareamento.+Pode+me+passar+mais+informações%3F"
+                class="btn-primary" target="_blank" rel="noopener noreferrer">
+                <span>Quero Comprar</span>
+                <span class="btn-trailing-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                    </path>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Linha de Produtos -->
+          <div class="produto-linha-card">
+            <div class="produto-linha-img-wrap">
+              <img src="assets/images/jhaddy-produtos.png" alt="Linha de produtos recomendados por Jhaddy Araújo"
+                loading="lazy">
+            </div>
+            <div class="produto-linha-info">
+              <span class="produto-tag">Linha Profissional</span>
+              <h3>Produtos que Jhaddy Usa e Indica</h3>
+              <p>Uma curadoria de cosméticos testados e aprovados pela especialista para potencializar os resultados dos
+                seus protocolos e cuidar da pele no dia a dia.</p>
+              <a href="https://wa.me/557198787024?text=Olá%2C+Jhaddy%21+Gostaria+de+saber+mais+sobre+os+produtos+que+você+recomenda."
+                class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                <span>Falar com Jhaddy</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         DEPOIMENTOS & PROVA SOCIAL
+         ====================================================================== -->
+    <section class="section-spacing" id="depoimentos" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>O que dizem sobre o Jhaddy Araújo Studio</h2>
+          <p>O carinho, a dedicação e os resultados de quem confia sua autoestima ao nosso espaço no Cabula.</p>
+
+          <div style="margin-top: 1.5rem;">
+            <div class="reviews-score-bar">
+              <strong style="font-size: 1.1rem;">Google Maps Avaliações</strong>
+              <div class="google-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-grid reveal-on-scroll" id="reviewsCarousel">
+
+          <!-- Avaliação 1 -->
+          <div class="bezel-card-outer review-slide">
+            <div class="bezel-card-inner">
+              <div class="google-stars" style="margin-bottom: 1rem;">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <blockquote class="review-quote">
+                "Atendimento maravilhoso! A Jhaddy é super atenciosa, cuidadosa e tem uma mão super leve. Minha limpeza
+                de pele ficou impecável, saí de lá renovada. Recomendo de olhos fechados!"
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">CL</div>
+                <div class="reviewer-info">
+                  <h4>Camila Lima</h4>
+                  <span>Cliente Verificada • Limpeza de Pele & Glow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avaliação 2 -->
+          <div class="bezel-card-outer review-slide">
+            <div class="bezel-card-inner">
+              <div class="google-stars" style="margin-bottom: 1rem;">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <blockquote class="review-quote">
+                "Fiz a epilação terapêutica e o dermaplaning com a Jhaddy. O cuidado e o conforto foram impressionantes!
+                Minha pele ficou macia como seda e sem qualquer foliculite. Atendimento impecável no Cabula."
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">RN</div>
+                <div class="reviewer-info">
+                  <h4>Renata Nogueira</h4>
+                  <span>Cliente Verificada • Epilação & Dermaplaning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avaliação 3 -->
+          <div class="bezel-card-outer review-slide">
+            <div class="bezel-card-inner">
+              <div class="google-stars" style="margin-bottom: 1rem;">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <blockquote class="review-quote">
+                "Estava muito incomodada com manchas escuras na virilha e o clareamento íntimo devolveu totalmente a
+                minha segurança. Protocolo delicado, seguro e super eficaz. Espaço limpo e acolhedor!"
+              </blockquote>
+              <div class="reviewer-meta">
+                <div class="reviewer-avatar">JS</div>
+                <div class="reviewer-info">
+                  <h4>Juliana Souza</h4>
+                  <span>Cliente Verificada • Clareamento Íntimo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles do Carrossel Mobile -->
+        <div class="reviews-carousel-nav" id="reviewsCarouselNav">
+          <button class="reviews-nav-btn reviews-prev" id="reviewsPrev" aria-label="Avaliação anterior">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="reviews-carousel-dots" id="reviewsCarouselDots">
+            <button class="review-carousel-dot is-active" data-index="0" aria-label="Ver avaliação 1"></button>
+            <button class="review-carousel-dot" data-index="1" aria-label="Ver avaliação 2"></button>
+            <button class="review-carousel-dot" data-index="2" aria-label="Ver avaliação 3"></button>
+          </div>
+          <button class="reviews-nav-btn reviews-next" id="reviewsNext" aria-label="Próxima avaliação">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <p class="real-reviews-note" style="text-align: center; margin-top: 1.5rem;">
+          <a href="https://maps.google.com/?cid=14108806332529309859" target="_blank" rel="noopener noreferrer"
+            style="color: var(--color-gold); font-size: 0.85rem; text-decoration: underline; font-weight: 500;">
+            Ver perfil oficial no Google Maps (CID 14108806332529309859)
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FAQ - DÚVIDAS FREQUENTES (5 PRINCIPAIS OBJEÇÕES)
+         ====================================================================== -->
+    <section class="section-spacing" id="faq">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Perguntas frequentes</h2>
+          <p>Informações práticas sobre atendimento, agendamentos e procedimentos no estúdio.</p>
+        </div>
+
+        <div class="faq-container reveal-on-scroll">
+
+          <!-- Pergunta 1 -->
+          <div class="faq-item">
+            <div class="faq-item-outer">
+              <button class="faq-button" type="button">
+                <span>Como funciona o agendamento de consultas e procedimentos?</span>
+                <span class="faq-icon-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  Os atendimentos acontecem com horário marcado para garantir tranquilidade e sem fila de espera. O agendamento pode ser solicitado diretamente pelo WhatsApp nos botões do site.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="faq-item">
+            <div class="faq-item-outer">
+              <button class="faq-button" type="button">
+                <span>A limpeza de pele dói ou deixa o rosto muito marcado?</span>
+                <span class="faq-icon-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  Usamos loções emolientes e vapor de ozônio para amolecer a pele antes de remover os cravos, o que alivia o incômodo da extração. No final, aplicamos alta frequência e uma máscara calmante para diminuir a vermelhidão. Você pode voltar à sua rotina logo após o atendimento.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="faq-item">
+            <div class="faq-item-outer">
+              <button class="faq-button" type="button">
+                <span>Onde o estúdio fica localizado e como é o acesso no Cabula?</span>
+                <span class="faq-icon-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  O estúdio fica no Condomínio Vila dos Sapotizeiros, na Rua Silveira Martins, 551, no Cabula (Salvador/BA). O acesso é direto pela via principal do bairro e o condomínio tem portaria de entrada.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="faq-item">
+            <div class="faq-item-outer">
+              <button class="faq-button" type="button">
+                <span>Como funcionam a Epilação Terapêutica e o Clareamento Íntimo?</span>
+                <span class="faq-icon-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  A epilação terapêutica usa produtos específicos antes e depois da cera para acalmar a pele e ajudar a prevenir pelos encravados. O clareamento íntimo utiliza ativos despigmentantes suaves para clarear manchas de atrito em axilas e virilha sem agredir a pele.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="faq-item">
+            <div class="faq-item-outer">
+              <button class="faq-button" type="button">
+                <span>Quais são as formas de pagamento aceitas no estúdio?</span>
+                <span class="faq-icon-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-content">
+                <div class="faq-content-inner">
+                  Aceitamos PIX, cartões de débito e cartões de crédito (com possibilidade de parcelamento para pacotes
+                  e protocolos combinados). Todas as condições são explicadas com total transparência no agendamento.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         ESTRUTURA DO ESTÚDIO & LOCALIZAÇÃO (DADOS REAIS MAPS)
+         ====================================================================== -->
+    <section class="section-spacing" id="contato">
+      <div class="container">
+        <div class="location-grid">
+
+          <div class="location-details reveal-on-scroll">
+            <h2 class="sr-only">Localização do Estúdio</h2>
+
+
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="loc-info">
+                <h4>Endereço Completo</h4>
+                <p data-config="fullAddress">Condomínio Vila dos Sapotizeiros - R. Silveira Martins, 551 - Cabula,
+                  Salvador - BA, 41150-000</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="loc-info">
+                <h4>Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 08h00 às 18h00</p>
+                <p>Sábado: 08h00 às 13h00 (Atendimento com agendamento prévio)</p>
+                <p style="color: var(--color-gold); font-size: 0.85rem; margin-top: 0.25rem;">Resposta em horário
+                  comercial pelo WhatsApp</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+              <button class="btn-whatsapp" data-action="open-whatsapp">
+                <span>Conversar no WhatsApp</span>
+                <span class="btn-trailing-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+
+              <div class="social-links-row">
+                <a href="https://www.instagram.com/jhaddy_araujostudioo/" class="social-icon-btn light-theme"
+                  data-social="instagram" aria-label="Instagram Jhaddy Araújo Studio" target="_blank"
+                  rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container reveal-on-scroll">
+            <iframe id="clinicGoogleMap"
+              src="https://maps.google.com/maps?q=condom%C3%ADnio+vila+dos+sapotizeiros+-+R.+Silveira+Martins,+551+-+Cabula,+Salvador+-+BA,+41150-000&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              title="Mapa de Localização - Jhaddy Araújo Studio no Cabula" loading="lazy" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CHAMADA FINAL DE ALTO IMPACTO
+         ====================================================================== -->
+    <section class="section-spacing"
+      style="background: var(--color-dark-bg); color: var(--color-text-light); text-align: center;">
+      <div class="container">
+        <div class="reveal-on-scroll" style="max-width: 720px; margin: 0 auto;">
+
+          <h2 style="color: var(--color-text-light); font-size: clamp(2.2rem, 4vw, 3.25rem); margin-bottom: 1.25rem;">
+            Pronta para renovar sua autoestima?
+          </h2>
+          <p style="color: var(--color-text-light-muted); font-size: 1.1rem; line-height: 1.75; margin-bottom: 2.5rem;">
+            Entre em contato direto pelo WhatsApp para consultar horários disponíveis, tirar dúvidas e reservar sua
+            avaliação exclusiva.
+          </p>
+
+          <button class="btn-primary" data-action="open-modal-booking">
+            <span>Agendar pelo WhatsApp</span>
+            <span class="btn-trailing-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       RODAPÉ (FOOTER)
+       ======================================================================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.15rem;">
+            <img src="assets/images/logo-icon.png?v=2.0" alt="Jhaddy Araújo Studio de Beleza" width="60" height="60"
+              style="border-radius: 50%; filter: drop-shadow(0 0 16px rgba(197, 160, 89, 0.5));">
+            <div>
+              <h3 style="margin-bottom: 0.15rem; font-size: 1.4rem;">Jhaddy Araújo</h3>
+              <span
+                style="font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold); display: block;">Studio
+                de Beleza</span>
+            </div>
+          </div>
+          <p data-config="tagline">Studio de Beleza • Estética Facial, Corporal & Depilação • Salvador/BA</p>
+          <p style="font-size: 0.8rem; color: var(--color-text-light-muted); margin-bottom: 1.5rem;">
+            Responsável: <strong data-config="specialistName">Jhaddy Araújo</strong><br>
+
+          </p>
+
+          <div class="social-links-row">
+            <a href="https://www.instagram.com/jhaddy_araujostudioo/" class="social-icon-btn" data-social="instagram"
+              aria-label="Instagram Jhaddy Araújo Studio" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegação Rápida</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#especialista">Sobre</a></li>
+            <li><a href="#tratamentos">Procedimentos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#depoimentos">Avaliações</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+            <li><a href="#contato">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contato e Endereço</h4>
+          <ul class="footer-links">
+            <li><span data-config="fullAddress">Condomínio Vila dos Sapotizeiros - Cabula, Salvador/BA</span></li>
+            <li><a href="privacidade.html" style="color: var(--color-gold); text-decoration: underline;">Política de
+                Privacidade (LGPD)</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="currentYear">2026</span> <span data-config="clinicName">Jhaddy Araújo Studio</span>. Todos os
+          direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BARRA FIXA MOBILE & BOTÃO FLUTUANTE DE WHATSAPP
+       ======================================================================== -->
+
+  <!-- Botão Flutuante Circular Desktop (>= 768px) -->
+  <a href="https://wa.me/5571987870244" class="floating-whatsapp-btn" data-action="open-whatsapp"
+    aria-label="Abrir conversa no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
+  </a>
+
+  <!-- Barra Fixa Mobile no Rodapé (< 768px) -->
+  <div class="mobile-sticky-cta-bar">
+    <a href="tel:5571987870244" class="mobile-sticky-btn-call" aria-label="Ligar para o estúdio">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+      <span>Ligar</span>
+    </a>
+    <button class="mobile-sticky-btn-booking" data-action="open-modal-booking">
+      <span>Agendar Avaliação</span>
+    </button>
+    <a href="https://wa.me/5571987870244" class="mobile-sticky-btn-wa" data-action="open-whatsapp"
+      aria-label="WhatsApp direto">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DE AGENDAMENTO VIP & CONVERSÃO
+       ======================================================================== -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="bookingModalClose" aria-label="Fechar Modal">✕</button>
+
+      <div style="text-align: center; margin-bottom: 1.75rem;">
+        <div class="eyebrow-badge" style="margin-bottom: 0.5rem;">
+          <span class="eyebrow-dot"></span>
+          <span>Atendimento Exclusivo</span>
+        </div>
+        <h3 style="font-size: 1.65rem; margin-bottom: 0.5rem;">Agendamento de Avaliação</h3>
+        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+          Preencha os dados abaixo para organizarmos seu atendimento personalizado no WhatsApp.
+        </p>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookName">Seu Nome Completo</label>
+          <input type="text" id="bookName" class="form-input" placeholder="Ex: Patrícia Santos" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookPhone">Seu WhatsApp com DDD</label>
+          <input type="tel" id="bookPhone" class="form-input" placeholder="(71) 9xxxx-xxxx" maxlength="15"
+            inputmode="numeric" required autocomplete="tel">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookProcedure">Procedimento de Maior Interesse</label>
+          <select id="bookProcedure" class="form-select">
+            <option value="Epilação Terapêutica">Epilação Terapêutica</option>
+            <option value="Clareamento Íntimo">Clareamento Íntimo</option>
+            <option value="Limpeza de Pele">Limpeza de Pele</option>
+            <option value="Dermaplaning">Dermaplaning</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookPeriod">Melhor Período para Atendimento</label>
+          <select id="bookPeriod" class="form-select">
+            <option value="Manhã (08h às 12h)">Manhã (08h às 12h)</option>
+            <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+            <option value="Sábado (08h às 13h)">Sábado (08h às 13h)</option>
+            <option value="Outro horário (combinar no WhatsApp)">Outro horário (combinar no WhatsApp)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1rem;">
+          <span>Continuar no WhatsApp</span>
+          <span class="btn-trailing-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </button>
+
+        <p style="font-size: 0.75rem; text-align: center; color: var(--color-text-muted); margin-top: 1rem;">
+          Seus dados são protegidos e utilizados exclusivamente para agendamento.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       BANNER LGPD DE CONSENTIMENTO DE COOKIES
+       ======================================================================== -->
+  <div class="lgpd-banner is-hidden" id="lgpdBanner">
+    <div class="lgpd-text">
+      Utilizamos cookies essenciais para o correto funcionamento da página, em conformidade com a <strong>LGPD</strong>.
+      Saiba mais em nossa <a href="privacidade.html">Política de Privacidade</a>.
+    </div>
+    <div class="lgpd-actions">
+      <button class="lgpd-btn-accept" id="lgpdAccept">Aceitar e Continuar</button>
+      <button class="lgpd-btn-decline" id="lgpdDecline">Apenas Essenciais</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

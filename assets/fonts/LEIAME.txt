@@ -1,0 +1,8 @@
+# Pasta de Fontes Locais (Halley)
+Coloque aqui os arquivos da fonte Halley caso possua o arquivo de instalação:
+- `halley.woff2` (Recomendado para web)
+- `halley.woff`
+- `halley.ttf`
+- `halley.otf`
+
+O CSS do site já está configurado para ler automaticamente esta pasta ou utilizar a fonte Halley instalada no seu sistema operacional.
